@@ -1,0 +1,1 @@
+"use strict";$(".btnadpt").click(function(){$("#na").val()&&null!=$("#pw").val()?$.ajax({url:"../api/login.json",data:{name:$("#na").val(),pw:$("#pw").val()},dataType:"json",success:function(a){1==a.code&&(location.href="./index.html",localStorage.setItem("name",$("#na").val()))}}):alert("请输入")});

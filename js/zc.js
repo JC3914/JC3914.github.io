@@ -1,0 +1,1 @@
+"use strict";$("#zccc").click(function(){$.ajax({url:"../api/register.json",data:{name:$("#zh").val(),pw:$("#ma").val()},dataType:"json",success:function(a){1==a.code&&(location.href="./index.html",localStorage.setItem("name",$("#zh").val()))}})});
